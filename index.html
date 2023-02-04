@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>codificatate!</title>
+</head>
+<body class="contenedor">
+    <header>
+        <img src="./assets/Logo.svg" alt="alura-logo">
+        <h1>Encriptador de texto Online</h1>
+    </header>
+    <main class="contenedor2">
+        <div class="entradaTexto">
+            <textarea name="name" id="textoIngresado" placeholder="ingresar texto aquí" cols="10" rows="10"></textarea>
+            <p>solo letras minusculas y sin acentos</p>
+            <div class="contenedorBotones" >
+                <button class="botones"  id="btnEncrip">Encriptar</button>
+                <button class="botones" id="btnDesencrip" >Desencriptar</button>
+                <!-- onclick="encriptar()" onclick="desencriptar()"-->
+            </div>
+        </div>
+        <div class="salidaTexto">
+            <div class="sinPalabras">
+                <img class="imagen" src="./assets/seguro.jpg" alt="alura-logo">
+                <h3>Todavia no hay ningún mensaje</h3>
+                <h5>Ingresa el texto que desees encriptar o desencriptar</h5>
+            </div>
+            <div class="conPalabras" ><!-- style="display: none;"  -->
+                <p id="vista"> </p>
+                <button class="botones" id="copy">copy</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
